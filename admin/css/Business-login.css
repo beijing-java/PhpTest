@@ -1,0 +1,19 @@
+body, div, dl, dt, dd, ul, ol, nl, li, h1, h2, h3, h4, h5, h6, p, span, a, b, strong, object, iframe, label, img, select, form, input, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin:0px;
+	padding:0px;
+	font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;   
+}
+ul,li,a{
+	text-decoration:none;
+	list-style:none;
+	display:inline;
+	font-size:12px;
+}
+.Business-login-contanier{
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ff6b1b,endColorStr=#f88556); /*IE*/ 
+	background:-moz-linear-gradient(top,#ff6b1b,#f88556);/*火狐*/
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ff6b1b), to(#f88556));/*谷歌*/
+	background-image: -webkit-gradient(linear,left bottom,left top,color-start(0, #ff6b1b),color-stop(1, #f88556));/* Safari & Chrome*/ 
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ff6b1b', endColorstr='#f88556'); /*IE6 & IE7*/ 
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ff6b1b', endColorstr='#f88556')"; /* IE8 */ 	
+}

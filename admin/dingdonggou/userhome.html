@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心</title>
+	<style>
+		html{
+			height: 100%;
+		}
+		body, div, dl, dt, dd, ul, ol, nl, li, h1, h2, h3, h4, h5, h6, p, span, a, b, strong, object, iframe, label, img, select, form, input, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+			margin:0px;
+			padding:0px;
+			font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+		}
+		* {
+		    -webkit-text-size-adjust: none;          
+		}
+		ul,li,a{
+			text-decoration:none;
+			list-style:none;
+			display:inline;
+		}
+		a, input ,button {
+		    -webkit-tap-highlight-color: rgba(0,0,0,0);          
+		    -webkit-appearance: none;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript" language="javascript">   
+		function iFrameHeight() {   
+			var ifm= document.getElementById("iframepage");   
+			var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+			if(ifm != null && subWeb != null) {
+	   			ifm.height = subWeb.body.scrollHeight;
+	   			ifm.width = subWeb.body.scrollWidth;
+			}
+		}
+	</script>
+
+<div style="width:80%;height:1000px;background:#fbfbfb;margin:30px auto;" align="center">
+	<div style="padding:20px;width:20%;height:960px;border:1px #555 solid;float:left;" align="center">
+    	<p style='width:100%;background:#fdfdfd;height:200px;' >
+	    	<img src=''>
+	    </p>
+    	<p style='color:#555;width:100%;margin-left:15px;margin-top:30px;' align='left'>
+	    	昵称：<br /><br />性别：<br /><br />积分：
+	    </p><br /><br />
+    	<ul style='color:#555;width:90%;height:auto;background:#fdfdfd;'>
+	    	<a href='userinfo.html' target='userframe'>
+	    		<li style='height:50px;font-size:16px;'>基本资料</li>
+	    	</a><br /><br />
+	    	<a href='userinfo_dtl.html' target='userframe'>
+	    		<li style='height:50px;font-size:16px;'>详细资料</li>
+	    	</a><br /><br />
+	       	<a href='useraccount.html' target='userframe'>
+	       		<li style='height:50px;font-size:16px;'>账户信息</li>
+	       	</a><br /><br />
+	       	<a href='userorder.html' target='userframe'>
+	       		<li style='height:50px;font-size:16px;'>历史订单</li>
+	       	</a><br /><br />
+        </ul>
+    
+	</div>
+	<div style="width:75%;height:1000px;border:1px #555 solid;float:right;" align="left">
+	   <iframe src="userinfo.html" id="iframepage" name="userframe" frameborder="0" scrolling="no" height="100%" width="100%" onLoad="iFrameHeight()"></iframe>
+	</div>
+</div>
+</body>
+</html>

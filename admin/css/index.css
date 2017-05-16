@@ -1,0 +1,87 @@
+body, div, dl, dt, dd, ul, ol, nl, li, h1, h2, h3, h4, h5, h6, p, span, a, b, strong, object, iframe, label, img, select, form, input, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin:0px;
+	padding:0px;
+	font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;   
+}
+ul,li,a{
+	text-decoration:none;
+	list-style:none;
+	display:inline;
+	font-size:12px;
+}
+
+#login-infor a:link,#login-infor a:visited{
+	color:#c7c5c5;
+}
+#login-infor a:hover,#login-infor a:active{
+	color:#FFF;
+}
+.search-control #search-con{
+	width: 440px;
+	height: 28px;
+	line-height: 28px;
+	padding: 12px 40px 12px 20px;
+	vertical-align: middle;
+	font-size: 21px;
+	color: #333;
+}
+.search-control .search-btn{
+	height: 56px;
+	line-height: 56px;
+	width: 125px;
+	font-size: 20px;
+	background-color: #ddd;
+	color: #333;	
+}
+.video-container{
+	text-align: center;
+	min-width:900px;
+	width:800px;
+	height:319px;
+	margin:auto;
+}
+
+.video-container .info{
+	display: inline-block;
+	margin-top: 27px;
+	position: absolute;
+	min-width: 400px;
+}
+.video-container .info .title{
+	font-size: 46px;
+	letter-spacing: 2px;
+	margin-left: 80px;
+	font-weight: 700;
+	color: #333;
+}
+.video-container .info .download-code .download{
+	display: inline-block;
+	margin-top: -11px;
+	width: 140px;
+	line-height: 65px;
+	float: left;
+	text-align: left;
+}
+.video-container .info .download-code .download a{
+	background-color: #FF2D4B;
+	padding: 13px 17px;
+	color: #fff;
+	font-size: 12px;
+}
+.video-container .info .download-code .code{
+	display: inline-block;
+	height: 100px;
+	margin-left: 9px;
+	font-size: 12px;
+	position: absolute;
+	color: #999;
+	background-color: #fff;
+}
+.video-container .info .download-code .code .icon_code{
+	background:url(file:///C|/Users/Hi/Desktop/waimai/images/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg) no-repeat;
+	background-position: left center;
+	display: inline-block;
+	height: 107px;
+	width: 111px;
+	vertical-align: text-bottom;
+}

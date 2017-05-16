@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本资料</title>
+</head>
+<body>
+	
+
+<div style="width:100%;height:auto;">    
+	<p style='width:40%;margin-top:30px;float:right;'>
+		<img src=''>
+	</p>
+	<p style='color:#555;width:60%;margin-left:15px;margin-top:30px;float:left;' >
+    	昵称：<br /><br />
+    	性别：<br /><br />
+    	积分：<br/>
+    	手机：<br/>
+    	电子邮箱：<br/>
+       	出生日期：<br/>
+       	个人喜好：<br/>
+       	最后一次登录经纬度：
+    </p>
+	<div>
+		<p style="color:blue;"><strong>个人中心—>用户基本资料</strong></p>
+	</div>
+	<div style='color:#555;width:65%;margin-left:15px;margin-top:30px;float:left;' >
+		<form name='infoform' action='' method='post' target='userframe'>
+	    	用户昵称：<input name='cstmr_name' type='text' value=''><br /><br />
+	    	用户性别：<input name='cstmr_sex' type='text' value=''><br /><br />
+	    	出生日期：<input name='cstmr_bday' type='text' value=''><br /><br />
+	    	个人喜好：<input name='cstmr_favor' type='text' value=''><br /><br />
+	       	用户手机：<input name='cstmr_phone' type='text' value=''><br /><br />
+	       	用户积分：<input name='cstmr_jifen' type='text' disabled='disabled' value=''><br />
+	    </form><br />
+       	最后一次登录：<input name='cstmr_crdnte' type='text' disabled='disabled' value=''>
+    </div>
+	<div style='width:30%;margin-top:30px;float:left;background:#aaaaaa;height:200px;'>
+    	<img src=''>
+    	<form name='userimgform' target='userframe' action='' method='post' enctype='multipart/form-data'>
+	    	<p style='margin-top:230px;'>
+		    	上传头像：<input name='imgpath' type='file' value=''>
+		    	<input name='dir' type='hidden' value='test'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    	<input name='subimgpath' type='submit' value='上传'>
+	    	</p>
+	    </form>
+    </div>
+
+</div>
+</body>
+</html>

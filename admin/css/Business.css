@@ -1,0 +1,29 @@
+body, div, dl, dt, dd, ul, ol, nl, li, h1, h2, h3, h4, h5, h6, p, span, a, b, strong, object, iframe, label, img, select, form, input, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin:0px;
+	padding:0px;
+	font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;   
+}
+ul,li,a{
+	text-decoration:none;
+	list-style:none;
+	
+	
+}
+#dingdan a:link,#dingdan a:visited{
+	color:#757575;
+}
+#dingdan a:hover{
+	color:#424242;
+}
+#dingdan a:active{
+	color:e6631b;
+}
+#filter-list a:link,#filter-list a:visited{
+	color:#757575;
+}
+#filter-list a:hover{
+	color:#424242;
+}
+#filter-list a:active{
+	color:e6631b;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>个人中心</title>
+  <script>
+      window.onload = function(){
+          var dingdan = document.getElementById('dingdan');
+          var xinxi = document.getElementById('xinxi');
+          var aLi = dingdan.getElementsByTagName('li');
+          var aUl = xinxi.getElementsByTagName('ul');
+          
+          for(var i=0;i<aLi.length;i++){
+              aLi[i].index = i;
+              aLi[i].onclick = function(){
+                  for(var i=0;i<aLi.length;i++){
+                      aLi[i].className = '';
+                      aUl[i].style.display = 'none';
+                  }
+                  this.className = 'active';
+                  aUl[this.index].style.display = 'block';
+              };
+          }
+      };
+  </script>
+</head>
+<style>
+    ul,li,a{
+      text-decoration:none;
+      list-style:none;
+    }
+    .active a{
+      color: #ff6700; 
+    }
+</style>
+<body>
+
+   <div style="float:left;"><p style="color:blue;"><strong>个人中心—>历史订单</strong></p></div>
+   <div style="float:right;width:300px;margin-top:10px;">
+           	   <form name="orderfindform" action="#" method="post">
+                	<label for="search" class="hide">订单查找：</label>
+                    <input type="search" name="keywords" autocomplete="off" placeholder="输入订单号" style="width:110px;height:30px;padding:0 15px;border:1px solid #e0e0e0;font-size:12px;line-height:30px;outline:0;color: #757575;">
+                  	<input type="submit" value="查找" style="width:50px;height:30px;border:1px solid #e0e0e0;font-size: 16px;line-height:30px;background:#fff;color:#616161;outline:0;">
+               </form>
+   </div><br /><br /><br />
+   <div style="width:100%;height:50px;" align="center">
+       <ul style="float: left;margin: 0;padding: 18px 0;font-size: 16px; color:#757575;line-height: 1.25;" id="dingdan">
+       	   <li style="float:left; width:110px; height:20px; border-right:1px #e0e0e0 solid;" id="first active" class="active"><a href="#" data-type="0" data-stat-id="89d882413195fd4c">全部有效订单</a></li>
+           <li style="float: left;padding: 0 20px; width:65px; height:20px; border-right:1px #e0e0e0 solid;"><a id="J_unpaidTab" href="#"  >已接订单</a></li>
+           <li style="float: left;padding: 0 20px; width:65px; height:20px; border-right:1px #e0e0e0 solid;"><a id="J_unpaidTab" href="#"  >未接订单</a></li>
+           <li style="float: left;padding: 0 20px; width:65px; height:20px;"><a id="J_unpaidTab" href="#"  >已拒订单</a></li>
+       </ul>
+   </div>
+   <div style="width:100%; margin:0 auto;">
+       <div style="height:50px;line-height:50px;background:#f6f6f6;font-size:16px;text-align:center;">
+           <ul>
+               <li style="float:left;width:10%;height:50px;display:inline-block;color:#999999; border-right:1px #ececec solid;">
+                   <a href="#" ><strong>订单编号</strong></a>
+               </li>
+               <li style="float:left;width:300px;height:50px;display:inline-block;color:#999999; border-right:1px #ececec solid;">
+                   <a href="#" ><strong>商家名称</strong></a>
+               </li>
+               <li style="float:left;width:10%;height:50px;display:inline-block;color:#999999; border-right:1px #ececec solid;">
+                   <a href="#" ><strong>金额</strong></a>
+               </li>
+               <li style="float:left;width:10%;height:50px;display:inline-block;color:#999999; border-right:1px #ececec solid;">
+                   <a href="#" ><strong>订单日期</strong></a>
+               </li>
+               <li style="float:left;width:10%;height:50px;display:inline-block;color:#999999; border-right:1px #ececec solid;">
+                   <a href="#" ><strong>订单状态</strong></a>
+               </li>
+           </ul>
+       </div>
+
+       <div id="xinxi" style="height:30px;line-height:10px;border-bottom:1px #f6f6f6 solid;border-top:1px #f6f6f6 solid;font-size:14px;text-align:center;width">
+           <ul style="display:block;">
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">111</li>
+               <li style="float:left;width:300px;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">111</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">111</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">111</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">111</li>
+           </ul>
+           <ul style="display:none;">
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">222</li>
+               <li style="float:left;width:300px;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">222</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">222</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">222</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">222</li>
+           </ul>
+           <ul style="display:none;">
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">333</li>
+               <li style="float:left;width:300px;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">333</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">333</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">333</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">333</li>
+           </ul>
+           <ul style="display:none;">
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">444</li>
+               <li style="float:left;width:300px;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">444</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">444</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">444</li>
+               <li style="float:left;width:10%;height:30px;display:inline-block;color:#999999; border-right:1px #ececec solid;">444</li>
+           </ul>
+       </div>
+
+    </div>
+</body>
+</html>

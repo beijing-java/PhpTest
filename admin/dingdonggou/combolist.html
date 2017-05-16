@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="叮当狗火锅，叮当狗火锅卖，叮当狗火锅外卖网，外卖订餐，网上订餐外卖，快餐外卖，外卖网，外卖；"/>
+<meta name="description" content="叮当狗火锅外卖打造的一个专业外卖服务平台，覆盖众多优质外卖商家，提供方便快捷的网上外卖订餐服务。">
+<link type="text/css" rel="stylesheet" href="css/shoplist.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<title>叮当狗火锅外卖</title>
+</head>
+<body>
+	<div class="shoplist-container" style="width:100%;height:auto;" align="center">
+    <!-- hesder -->
+    	<div class="shoplist-hesder" style="width:100%; background:#de0600; height:50px;">
+        	<div class="nav" align="center" style="width:1200px; margin:0 auto;">
+            	<div class="nav-infor" >
+                	<div class="logo" style="float:left; ">
+                    	 <img src="images/dingdong.png">
+                  </div>
+                  <nav>
+        						<ul class="nav" style="height: 50px;position:absolute;left: 1000px; ">
+        							<li class="nav-item nav-item-active" id="find" style="float: left;border: solid 1px transparent;line-height: 50px;text-align: center;">
+        								<a href="" class="nav-item-link" style="eight: 50px;padding-left: 16px;padding-right: 16px;display: block;color: #fff;font-size: 14px;"></a>
+        							</li>
+        							<li class="nav-item nav-item-active" id="find" style="float: left;border: solid 1px transparent;line-height: 50px;text-align: center;">
+        								<a href="#" class="nav-item-link" style="eight: 50px;padding-left: 16px;padding-right: 16px;display: block;color: #fff;font-size: 14px;">联系我们</a>
+        							</li>
+        						</ul>
+        					</nav>
+
+                  <div id="login" style="">
+                  	<ul id="login-infor"  style=" text-align:center;margin-top:20px; float:right; font-size:16px;color:#FFF; ">
+                			<li style="margin-right:20px;"><a href="" target="_self">登录</a></li>
+                			<li style=""><a href="">注册</a></li>
+                    </ul>
+                  </div>
+
+              </div>
+   		  </div>
+        </div>
+    	<!--main-->  
+    	<div class="main" style="width:80%;height:auto;" align="center">        
+            	<div class="filter-category clearfix" style="background-color:#f5f5f5;width:100%; height:250px;padding-left:30px;padding-top:30px;margin-top:30px;">
+				</div>
+                        
+           		 <!--店铺导航--> 
+                <div class="filter-bottom clearfix" id="filter-bottom" style="background:#fafafa;overflow:hidden;margin:0 auto;width:1275px;height:40px;background-color:#fff;zoom:1;border-bottom:1px solid #e4e4e4;">
+               		  <div class="outline-left" style="height: 40px;position: absolute;width: 400px;">
+                    	<ul class="option-left" style="float: left;width: 400px;height: 40px;line-height: 40px;">
+                        	<li style="float: left;margin: 0 7px;">
+                        	    <a href="" target="_self">
+                            		<span class="sort-item selected" data-node="" style="padding-right: 10px">默认</span>
+                            	</a>
+                            	<span class="item-interval">|</span>
+                            </li>
+                            <li class="item-left" style="float: left;margin: 0 7px;">
+                        	    <a href="" target="_self">
+                           			<span class="sort-item" data-node="month_sales">销量</span>
+                           			<i style="background:url('images/up.jpg');"></i>
+                            	</a>
+                            	<i class="down"></i>
+                            	<span class="item-interval">|</span>
+                            </li>
+                            <li style="float: left;margin: 0 7px;">
+                         	    <a href="" target="_self">
+                            		<span class="sort-item" data-node="distance">餐厅距离</span>
+                            	</a>
+                            	<i></i>
+                            	<span class="item-interval">|</span>
+                            </li>
+                            <li style="float: left;margin: 0 7px;">
+                        	    <a href="" target="_self">
+                           			<span class="sort-item" data-node="comment">评分</span>
+                            	</a>
+                            	<i class="down"></i>
+                            	<span class="item-interval">|</span>
+                            </li>
+                            <li style="float: left;margin: 0 7px;">
+                        	    <a href="" target="_self">
+                            		<span class="sort-item" data-node="takeout_price">起送价</span>
+                            	</a>
+                            	<i></i>
+                            	<span class="item-interval last">|</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-outline" style="position: absolute;background-color: #fff;height: 40px;overflow: hidden;width: 500px;right: 313px;">
+                    	<ul class="filter-option" style=" width:500px;height: 40px;float: right;zoom: 1;">
+                        	<li class="option-item" data-msg="支持在线支付" data-type="pay" style="float: left;height: 40px;line-height: 40px;margin-bottom: 14px;cursor: pointer;width: 25%;">
+              								<img src="images/tubiao-3.png" style=" height:14px;">
+              								<span style="font-size: 14px;position: relative;left: 3px;">支持在线支付</span>
+              							</li>
+                            <li class="option-item" data-msg="新用户立减" data-type="xin" style="float: left;height: 40px;line-height: 40px;margin-bottom: 14px;cursor: pointer;width: 25%;">
+                								<img src="images/tubiao-3.png" style=" height:14px;">
+                								<span style="font-size: 14px;position: relative;left: 3px;">新用户立减</span>
+                						</li>
+                            <li class="option-item" data-msg="立减优惠" data-type="jian" style="float: left;height: 40px;line-height: 40px;margin-bottom: 14px;cursor: pointer;width: 25%;">
+                								<img src="images/tubiao-3.png" style=" height:14px;">
+                								<span style="font-size: 14px;position: relative;left: 3px;">立减优惠</span>
+                						</li>
+                            <li class="option-item" data-msg="特价优惠" data-type="te" style="float: left;height: 40px;line-height: 40px;margin-bottom: 14px;cursor: pointer;width: 25%;">
+                								<img src="images/tubiao-3.png" style=" height:14px;">
+                								<span style="font-size: 14px;position: relative;left: 3px;">特价优惠</span>
+                						</li>                            
+                        </ul>
+                    </div>
+           		  </div>
+               <!--套餐列表--> 
+           		<div id="zhengti" style="width:100%;margin-top:15px;" align="center">
+                    <div style="height:300px;background:#f5f5f5;margin-top:15px;" align="left">
+                      	<img style="float:left;margin-left:30px;margin-top:25px;" src="" width="280px" height="250px" />
+                       	<p style="color:#555; font-size:16px;float:left;margin-left:30px;margin-top:30px;height:250px;width:200px;background:#fdfdfd;">
+                      		<span style="color:#000;">套餐名称</span><br />
+                      		<span style="color:#555;">套餐评星分数</span><br />
+                      		<span style="color:#555;">套餐销售量</span><br />
+                      		<span style="color:#555;">套餐价格</span>
+                       	</p>
+
+                   	</div>
+
+           	    </div>
+        </div>
+        <!--footer-->
+         <div class="footer" style=" clear:both;width: 100%;min-width: 980px;height: 220px;background: #fafafa;margin-top:30px;">
+         	<div class="footer-items" style="padding: 18px 0;width: 980px;margin: auto;border-bottom: 1px solid #eee;">
+            	<div class="footer-items-snippet footer-item help" style="height: 116px;width: 184px;border-right: 1px solid #eee;display: inline-block;vertical-align: top;padding: 0 0 0 50px;">
+					<h3 style="color: #999;margin-bottom: 10px;font-size:22px;">帮助</h3>
+					<div class="text" >
+						<a href="#" style=" color:#aaa;">建议与反馈</a><br>
+						<a href="#" style=" color:#aaa;">使用帮助</a><br>
+						<a href="#" style=" color:#aaa;">常见问题</a><br>
+						<a href="#" style=" color:#aaa;">用户协议</a>
+					</div>
+				</div>
+                <div class="footer-items-snippet footer-item followus" style="height:116px;width:184px;border-right:1px solid #eee;display: inline-block;vertical-align:top;padding: 0 0 0 50px;">
+					<h3 style="color: #999;margin-bottom: 10px;font-size: 22px;">关注我们</h3>
+					<div class="text">
+						<a href="#" style=" color:#aaa;">官方论坛</a><br>
+						<a href="#" style=" color:#aaa;">新浪微博</a><br>
+						<a href="#" style=" color:#aaa;">关于我们</a><br>
+						<a href="#" style=" color:#aaa;">微信公众号</a>
+					</div>
+				</div>
+                <div class="footer-items-snippet footer-item" style="height: 116px;width: 184px;border-right: 1px solid #eee;display: inline-block;vertical-align: top;padding: 0 0 0 50px;">
+					<h3 style="color: #999;margin-bottom: 10px;font-size: 22px;">商务合作</h3>
+					<div class="text">
+						<a href="#" target="_blank" style=" color:#aaa;">商户中心</a><br>
+						<a href="#" class="waimai-email" style=" color:#aaa;">邮箱：waimai-zhaoshang
+                        	<span>@iwaimai.baidu.com</span>
+                        </a>
+					</div>
+				</div>
+                 <div class="footer-items-contact footer-item" style="height: 86px;width: 184px;display: inline-block;vertical-align: top;padding: 0 0 0 50px;">
+					<h3 style="color: #999;font-size: 24px;"><img src="images/tubiao-1.png" alt="图标">客服热线</h3>
+					<em style="display: block;color: #999;font-style: normal;font-size:18px;margin: 2px 0 0;">400-011-7777</em>
+					<div class="text no-hover">
+						<span style=" font-size:10px;color: #aaa;">周一至周日9:00-22:00</span>
+                    </div>
+				</div>
+                
+            </div>
+             <p class="footer-copy" style="width: 980px;margin: auto;text-align: center;height: 60px;line-height: 60px;color: #aaa;">叮当狗火锅<span>合作伙伴&nbsp;&nbsp;</span></p>
+            
+      </div>
+       
+    </div>
+</body>
+</html>
